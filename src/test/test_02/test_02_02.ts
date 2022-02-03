@@ -11,6 +11,7 @@ type HousesType = {
 
 type GovBuildingsType = {
   type: "HOSPITAL" | "FIRESTATION" | "SCHOOL";
+  budget: number;
   adress: {
     street: string;
     number: number;

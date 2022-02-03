@@ -1,4 +1,4 @@
-type UserType = {
+export type UserType = {
   id: number;
   name: string;
   age: number;
@@ -36,11 +36,11 @@ type UserType = {
   ];
 };
 
-const user: UserType = {
+export const user: UserType = {
   id: 1,
   name: "Maxim",
   age: 32,
-  isActive: true,
+  isActive: false,
   location: {
     country: "Belarus",
     adress: {
@@ -73,5 +73,3 @@ const user: UserType = {
     },
   ],
 };
-
-console.log(user);
