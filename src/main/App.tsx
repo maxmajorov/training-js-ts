@@ -9,6 +9,7 @@ import UncontrolledRating from "./components/UncontrolledRating/Rating";
 import FullInput from "./components/universal-input/FullInput";
 import Button from "./components/universal-input/InputButton/Button";
 import Input from "./components/universal-input/InputButton/Input";
+import UseEffect from "./components/useEffect-training/UseEffect";
 import ON_OFF from "./components/useState-onOff/ON-OFF";
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
       <ON_OFF />
       <UncontrolledAccordion />
       <UncontrolledRating />
+      <UseEffect />
     </div>
   );
 }
