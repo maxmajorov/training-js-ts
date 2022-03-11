@@ -13,8 +13,6 @@ const UseEffect = () => {
 
   const useSpanInfo = document.getElementsByClassName("useInfo");
 
-  console.log(useSpanInfo[0]);
-
   useEffect(() => {
     useSpanInfo[0].textContent = `${name}, Вы кликнули ${count} раз`;
     document.title = `${name}, Вы кликнули ${count} раз`;

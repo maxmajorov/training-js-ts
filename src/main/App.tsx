@@ -47,7 +47,7 @@ function App() {
       <ON_OFF />
       <UncontrolledAccordion />
       <UncontrolledRating />
-      <UseEffect />
+      {/* <UseEffect /> */}
     </div>
   );
 }
