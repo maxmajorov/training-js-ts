@@ -1,5 +1,5 @@
 {
-  "name": "simple-react-homeworks",
+  "name": "training",
   "homepage": "https://maxmajorov.github.io/Homework/",
   "version": "0.1.0",
   "private": true,
@@ -44,8 +44,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
-    "@storybook/addon-docs": "6.0.0-beta.25",
-    "@storybook/react": "6.0.0-beta.25",
+    "@storybook/addon-docs": "6.4.20",
+    "@storybook/react": "6.4.20",
     "@types/storybook__react": "^5.2.1",
     "babel-loader": "^8.2.4",
     "gh-pages": "^3.2.3"

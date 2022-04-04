@@ -3,7 +3,7 @@ import ControlOnOff from "./Control_ON_OFF";
 import { action } from "@storybook/addon-actions";
 
 export default {
-  title: "ControlOnOff",
+  title: "controlled/ControlOnOff",
   component: ControlOnOff,
 };
 

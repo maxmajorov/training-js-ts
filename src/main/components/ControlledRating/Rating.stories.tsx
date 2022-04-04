@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Rating from "./Rating";
 
 export default {
-  title: "Controll Rating",
+  title: "controlled/Controll Rating",
   component: Rating,
 };
 

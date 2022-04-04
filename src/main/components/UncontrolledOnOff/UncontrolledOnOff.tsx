@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 
-const ON_OFF = () => {
-  const [on, setOn] = useState(false);
+type UncontrolledOnOffPropsType = {
+  onClick: (on: boolean) => void;
+  defaultOn?: boolean;
+};
+
+export const UncontrolledOnOff: React.FC<UncontrolledOnOffPropsType> = ({
+  defaultOn,
+}) => {
+  const [on, setOn] = useState(defaultOn ? defaultOn : false);
 
   const onClick_ON_Handler = () => {
     setOn(true);
@@ -35,7 +42,7 @@ const ON_OFF = () => {
 
   return (
     <div>
-      <h1>useState</h1>
+      <h1>Uncontrolled ON_OFF</h1>
       <div>
         <button style={onButtonStyle} onClick={onClick_ON_Handler}>
           ON
@@ -48,5 +55,3 @@ const ON_OFF = () => {
     </div>
   );
 };
-
-export default ON_OFF;

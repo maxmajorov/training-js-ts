@@ -2,16 +2,13 @@ import React, { useState } from "react";
 import { User } from "../test/test_06_callback/test_06";
 import { ManComponent } from "../test/test_07_destructuring-assigment/ManComponent";
 import { manProps } from "../test/test_07_destructuring-assigment/test_07.test";
-
 import s from "./App.module.css";
-import Rating from "./components/Rating/Rating";
+import Rating from "./components/ControlledRating/Rating";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/Accordion";
-import UncontrolledRating from "./components/UncontrolledRating/Rating";
 import FullInput from "./components/universal-input/FullInput";
 import Button from "./components/universal-input/InputButton/Button";
 import Input from "./components/universal-input/InputButton/Input";
 // import UseEffect from "./components/useEffect-training/UseEffect";
-import ON_OFF from "./components/useState-onOff/ON-OFF";
 
 function App() {
   let [messages, setMessages] = useState([
@@ -45,8 +42,6 @@ function App() {
       {/* {messages.map((el) => (
         <div>{el.message}</div>
       ))} */}
-      <ON_OFF />
-      <ON_OFF />
       <UncontrolledAccordion />
       {/* <UncontrolledRating /> */}
       {/* <UseEffect /> */}\
