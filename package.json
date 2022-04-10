@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
     "@storybook/addon-actions": "^6.4.20",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -43,6 +44,6 @@
     ]
   },
   "devDependencies": {
-      "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3"
   }
 }
