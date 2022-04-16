@@ -19,11 +19,14 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 type ControlledSelectPropsType = {
-  selectItem: any;
-  setSelectItem: (value: any) => void;
+  selectItem: string;
+  setSelectItem: (value: string) => void;
 };
 
-export const ControlledSelect = ({ selectItem, setSelectItem }) => {
+export const ControlledSelect: React.FC<ControlledSelectPropsType> = ({
+  selectItem,
+  setSelectItem,
+}) => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 

@@ -33,7 +33,7 @@ function App() {
 
   const [collapsed, setCollapsed] = useState<boolean>(true);
 
-  const [selectItem, setSelectItem] = useState<any>("none");
+  const [selectItem, setSelectItem] = useState<string>("none");
 
   let [mes, setMes] = useState("");
   const [ratingVal, setRatingVal] = useState<number>(0);
@@ -53,7 +53,7 @@ function App() {
     console.log(collapsed);
   };
 
-  const setSelectItemCallback = (value: any) => {
+  const setSelectItemCallback = (value: string) => {
     setSelectItem(value);
   };
 
@@ -68,7 +68,7 @@ function App() {
       {/* {messages.map((el) => (
         <div>{el.message}</div>
       ))} */}
-      {/* <UncontrolledAccordion /> */}
+      <UncontrolledAccordion />
       {/* <UncontrolledRating /> */}
       {/* <UseEffect /> */}\
       <Rating value={ratingVal} onClick={setRatingVal} />
