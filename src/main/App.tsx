@@ -6,6 +6,7 @@ import s from "./App.module.css";
 import { ControlledAccordion } from "./components/ControlledAccordion/ControlledAccordion";
 import Rating from "./components/ControlledRating/Rating";
 import { ControlledSelect } from "./components/ControlledSelect/ControlledSelect";
+import { MemoExample } from "./components/MemoExample/MemoExapmle";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/Accordion";
 import FullInput from "./components/universal-input/FullInput";
 import Button from "./components/universal-input/InputButton/Button";
@@ -81,6 +82,8 @@ function App() {
         selectItem={selectItem}
         setSelectItem={setSelectItemCallback}
       />
+      <hr></hr>
+      <MemoExample />
     </div>
   );
 }
