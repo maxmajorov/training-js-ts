@@ -1,16 +1,18 @@
 import React, { useState } from "react";
-import { User } from "../test/test_06_callback/test_06";
-import { ManComponent } from "../test/test_07_destructuring-assigment/ManComponent";
-import { manProps } from "../test/test_07_destructuring-assigment/test_07.test";
+// import { User } from "../test/test_06_callback/test_06";
+// import { ManComponent } from "../test/test_07_destructuring-assigment/ManComponent";
+// import { manProps } from "../test/test_07_destructuring-assigment/test_07.test";
 import s from "./App.module.css";
 import { ControlledAccordion } from "./components/ControlledAccordion/ControlledAccordion";
 import Rating from "./components/ControlledRating/Rating";
 import { ControlledSelect } from "./components/ControlledSelect/ControlledSelect";
 import { MemoExample } from "./components/MemoExample/MemoExapmle";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/Accordion";
-import FullInput from "./components/universal-input/FullInput";
-import Button from "./components/universal-input/InputButton/Button";
-import Input from "./components/universal-input/InputButton/Input";
+// import FullInput from "./components/universal-input/FullInput";
+// import Button from "./components/universal-input/InputButton/Button";
+// import Input from "./components/universal-input/InputButton/Input";
+import { UseMemoExample } from "./components/UseMemoExample/UseMemoExample";
+import { UseMemoExampleWithReactMemo } from "./components/UseMemoExample/UseMemoExampleWithReactMemo";
 // import UseEffect from "./components/useEffect-training/UseEffect";
 
 function App() {
@@ -82,8 +84,12 @@ function App() {
         selectItem={selectItem}
         setSelectItem={setSelectItemCallback}
       />
-      <hr></hr>
+      <hr />
       <MemoExample />
+      <hr />
+      <UseMemoExample />
+      <hr />
+      <UseMemoExampleWithReactMemo />
     </div>
   );
 }
