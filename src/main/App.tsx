@@ -8,6 +8,7 @@ import Rating from "./components/ControlledRating/Rating";
 import { ControlledSelect } from "./components/ControlledSelect/ControlledSelect";
 import { MemoExample } from "./components/MemoExample/MemoExapmle";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/Accordion";
+import { UseCallbackExample } from "./components/UseCallbackExample/UseCallbackExamp";
 // import FullInput from "./components/universal-input/FullInput";
 // import Button from "./components/universal-input/InputButton/Button";
 // import Input from "./components/universal-input/InputButton/Input";
@@ -85,11 +86,19 @@ function App() {
         setSelectItem={setSelectItemCallback}
       />
       <hr />
+      React.memo
+      <br />
       <MemoExample />
       <hr />
+      useMemo <br />
       <UseMemoExample />
       <hr />
+      useMemo with React.memo
+      <br />
       <UseMemoExampleWithReactMemo />
+      <hr />
+      useCallback <br />
+      <UseCallbackExample />
     </div>
   );
 }
