@@ -4,17 +4,19 @@ import React, { useState } from "react";
 // import { manProps } from "../test/test_07_destructuring-assigment/test_07.test";
 import s from "./App.module.css";
 import { ControlledAccordion } from "./components/ControlledAccordion/ControlledAccordion";
-import Rating from "./components/ControlledRating/Rating";
+// import Rating from "./components/ControlledRating/Rating";
 import { ControlledSelect } from "./components/ControlledSelect/ControlledSelect";
 import { MemoExample } from "./components/MemoExample/MemoExapmle";
-import UncontrolledAccordion from "./components/UncontrolledAccordion/Accordion";
+// import UncontrolledAccordion from "./components/UncontrolledAccordion/Accordion";
 import { UseCallbackExample } from "./components/UseCallbackExample/UseCallbackExamp";
+import { SetTimeOutUseEffect } from "./components/useEffect-training/SetTimeOutUseEffect";
+import { UseEffect } from "./components/useEffect-training/UseEffect";
 // import FullInput from "./components/universal-input/FullInput";
 // import Button from "./components/universal-input/InputButton/Button";
 // import Input from "./components/universal-input/InputButton/Input";
 import { UseMemoExample } from "./components/UseMemoExample/UseMemoExample";
 import { UseMemoExampleWithReactMemo } from "./components/UseMemoExample/UseMemoExampleWithReactMemo";
-// import UseEffect from "./components/useEffect-training/UseEffect";
+import { UseStateSuper } from "./components/useState-super/UseStateSuper";
 
 function App() {
   const [messages, setMessages] = useState([
@@ -72,10 +74,9 @@ function App() {
       {/* {messages.map((el) => (
         <div>{el.message}</div>
       ))} */}
-      <UncontrolledAccordion />
+      {/* <UncontrolledAccordion /> */}
       {/* <UncontrolledRating /> */}
-      {/* <UseEffect /> */}\
-      <Rating value={ratingVal} onClick={setRatingVal} />
+      {/* <Rating value={ratingVal} onClick={setRatingVal} /> */}
       <ControlledAccordion
         accordItems={accordItems}
         setCollapsed={setCollapsedCallback}
@@ -99,6 +100,13 @@ function App() {
       <hr />
       useCallback <br />
       <UseCallbackExample />
+      <hr />
+      useState SUPER <br />
+      <UseStateSuper />
+      <hr />
+      useEffect <br />
+      {/* <UseEffect /> */}
+      <SetTimeOutUseEffect />
     </div>
   );
 }
