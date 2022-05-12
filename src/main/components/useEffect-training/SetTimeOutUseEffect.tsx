@@ -1,12 +1,8 @@
-import React, { ChangeEvent, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const SetTimeOutUseEffect = () => {
   const [count, setCount] = useState<number>(0);
   const [time, setTime] = useState<string>("");
-
-  const onClickCountHandler = () => {
-    setCount(count + 1);
-  };
 
   useEffect(() => {
     console.log("useEffect");
@@ -17,9 +13,14 @@ export const SetTimeOutUseEffect = () => {
 
     // ==== CLOCK ====
 
-    setInterval(() => {
-      setTime((state) => new Date().toLocaleTimeString());
+    const clockID = setInterval(() => {
+      console.log("tick");
+      setTime(new Date().toLocaleTimeString());
     }, 1000);
+
+    return () => {
+      clearInterval(clockID); //демонтирует часы ==> функция зачистки useEffect
+    };
   }, []);
 
   return (
