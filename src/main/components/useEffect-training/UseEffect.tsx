@@ -12,9 +12,9 @@ export const UseEffect = () => {
   };
 
   useEffect(() => {
-    console.log("useEffect");
+    // console.log("useEffect");
 
-    setInterval(() => {
+    let intervalID = setInterval(() => {
       setCount((state) => state + 1);
     }, 1000);
 
@@ -22,6 +22,10 @@ export const UseEffect = () => {
 
     useSpanInfo[0].textContent = `${name}, Вы кликнули ${count} раз`;
     document.title = `${name}, Вы кликнули ${count} раз`;
+
+    return () => {
+      clearInterval(intervalID);
+    };
   }, [name, count]);
 
   return (

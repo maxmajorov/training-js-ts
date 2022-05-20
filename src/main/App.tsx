@@ -10,7 +10,9 @@ import { ControlledSelect } from "./components/ControlledSelect/ControlledSelect
 import { MemoExample } from "./components/MemoExample/MemoExapmle";
 // import UncontrolledAccordion from "./components/UncontrolledAccordion/Accordion";
 import { UseCallbackExample } from "./components/UseCallbackExample/UseCallbackExamp";
+import { ResetEffect } from "./components/useEffect-training/ResetEffect";
 import { UseEffect } from "./components/useEffect-training/UseEffect";
+import { KeysTracker } from "./components/useEffect-training/KeysTracker";
 // import FullInput from "./components/universal-input/FullInput";
 // import Button from "./components/universal-input/InputButton/Button";
 // import Input from "./components/universal-input/InputButton/Input";
@@ -107,6 +109,10 @@ function App() {
       Clocks <br />
       {/* <UseEffect /> */}
       <AnalogDigitalClock />
+      Clocks <br />
+      <UseEffect />
+      <ResetEffect />
+      <KeysTracker />
     </div>
   );
 }
