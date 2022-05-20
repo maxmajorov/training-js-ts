@@ -13,6 +13,11 @@ export const UseEffect = () => {
 
   useEffect(() => {
     console.log("useEffect");
+
+    setInterval(() => {
+      setCount((state) => state + 1);
+    }, 1000);
+
     const useSpanInfo = document.getElementsByClassName("useInfo");
 
     useSpanInfo[0].textContent = `${name}, Вы кликнули ${count} раз`;

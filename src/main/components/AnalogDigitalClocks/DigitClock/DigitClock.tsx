@@ -1,16 +1,10 @@
 import React, { useEffect, useState } from "react";
+import classes from "./DigitClock.module.css";
 
-export const SetTimeOutUseEffect = () => {
-  const [count, setCount] = useState<number>(0);
+export const DigitClock = () => {
   const [time, setTime] = useState<string>("");
 
   useEffect(() => {
-    console.log("useEffect");
-    setInterval(() => {
-      setCount((state) => state + 1);
-    }, 1000);
-    // setTimeout(() => alert(`Вы кликнули ${count} раз`), 2000);
-
     // ==== CLOCK ====
 
     const clockID = setInterval(() => {
@@ -24,9 +18,8 @@ export const SetTimeOutUseEffect = () => {
   }, []);
 
   return (
-    <div>
-      <h1>useEffect === {count}</h1>
-      <span>TIME: {time}</span>
+    <div className={classes.clockSection}>
+      <span className={classes.time}>TIME: {time}</span>
     </div>
   );
 };

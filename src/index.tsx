@@ -10,9 +10,9 @@ import { store } from "./first/store";
 
 ReactDOM.render(
   <Provider store={store}>
-    {/* <App /> */}
+    <App />
     {/* <AppTODO /> С доп занятий */}
-    <AppFirstDop />
+    {/* <AppFirstDop /> */}
   </Provider>,
   document.getElementById("root")
 );

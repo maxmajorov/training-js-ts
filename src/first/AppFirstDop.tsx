@@ -15,7 +15,7 @@ export const AppFirstDop = () => {
 
   const users = useSelector(selectUsers);
   const usersCount = useSelector(selectUsersCount);
-
+  console.log(usersCount);
   const [isAddNewUser, setIsAddNewUser] = useState<boolean>(false);
 
   useEffect(() => {
